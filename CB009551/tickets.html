@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>tickets</title>
+
+    
+</head>
+<body>
+
+
+    <div class="bg">
+
+    <div class="ticketsmain">
+        <div class="nav">
+            <nav><a href="./homepage.html" target="_blank">Home</a></nav>
+            <nav><a href="./turtlecategories.html" target="_blank">Turtle Categories</a></nav>
+            <nav><a href="./HikaduwaTurtleHatch.html" target="_blank">Hikkaduwa Turtle Hatchery</a></nav>
+            <nav><a href="./Threats.html" target="_blank">Threats</a></nav>
+            
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Other
+                </button>
+                <div class="dropdowncontent">
+                    <a href="./kosgoda.html" target="_blank">Kosgoda</a>
+                    <a href="./bentota.html" target="_blank">Bentota</a>
+                </div>
+            </div>
+            <nav><a href="./Donations.html" target="_blank">Donations</a></nav>
+        </div>
+        <h1 class="heading">Tickets</h1>
+    </div>
+
+
+    <div class="ticketnav">
+        <ul>
+            <li><a href="#blank">Tickets ></a></li>
+            <li>Details ></li>
+            <li>Payment ></li>
+            <li>confirmation</li>
+        </ul>
+    </div>
+
+    <div>
+        
+    <div class="maincontainer">
+    <div class="left">
+        
+        <form id="ticketform" action="./details.html">
+
+        <h2>Please select a date:</h2>
+        <div>
+        <input type="date" id="ticketdate" name="ticketdate">
+        </div>
+        <h2>Choose the number of guests</h2> 
+
+        <div class="guest">
+            <h3>Sri Lankan Adult</h3>
+            <div>
+                <button id="guestbtn-" type="button">-</button>
+                <span id="number">0</span>
+                <button id="guestbtn" type="button">+</button>
+            </div>
+            <p>above 15 years</p>
+        </div>
+
+        <div class="guest"> 
+        <h3>Foreign Adult</h3>        
+        <div>
+            <button id="guestbtn-" type="button">-</button>
+            <span id="number">0</span>
+            <button id="guestbtn" type="button">+</button>
+        </div>
+        <p>Above 15 years</p>
+        </div>
+
+        <div class="guest">
+        <h3>Sri Lankan Child</h3>
+        <div>
+            <button id="guestbtn-" type="button">-</button>
+            <span id="number">0</span>
+            <button id="guestbtn" type="button">+</button>
+        </div>
+        <p>5 to 14 years old</p>
+        </div>
+        
+        <div class="guest">
+        <h3>Foreign Child</h3>
+        <div>
+            <button id="guestbtn-" type="button">-</button>
+            <span id="number">0</span>
+            <button id="guestbtn" type="button">+</button>
+        </div>
+        <p>5 to 14 years old</p>
+        </div>
+
+        <div class="guest">
+        <h3>Infant</h3>
+        <div>
+            <button id="guestbtn-" type="button">-</button>
+            <span id="number">0</span>
+            <button id="guestbtn" type="button">+</button>
+        </div>
+        <p>Under 4 years old</p>
+        </div> 
+
+
+        <h2>Please select a time slot:</h2>
+
+
+        <div class="duration">
+            
+
+            <select name="time" id="time" multiple>
+                <option value="1">07.00 am - 08.00 am</option>
+                <option value="2">08.00 am - 09.00 am</option>
+                <option value="3">09.00 am - 10.00 am</option>
+                <option value="4">10:00 am - 11:00 am (Peak)</option>
+                <option value="5">11:00 am - 12:00 pm (Peak)</option>
+                <option value="6">12:00 pm - 01:00 pm (Peak)</option>
+                <option value="7">01:00 pm - 02:00 pm</option>
+                <option value="8">02:00 pm - 03:00 pm</option>
+                <option value="9">03:00 pm - 04:00 pm (Peak)</option>
+                <option value="10">04:00 pm - 05:00 pm (Peak)</option>
+                <option value="11">05:00 pm - 06:00 pm (Peak)</option>
+            </select>
+
+            <table class="guesttable1">
+                <tr>
+                    <th>Guest</th>
+                    <th>Time</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Foreigner Adult</td>
+                    <td>Normal</td>
+                    <td>10 USD</td>
+                </tr>
+                <tr>
+                    <td>Foreigner Adult</td>
+                    <td>Peak</td>
+                    <td>13 USD</td>
+                </tr>
+                <tr>
+                    <td>Foreigner Child</td>
+                    <td>Normal</td>
+                    <td>5 USD</td>
+                </tr>
+                <tr>
+                    <td>Foreigner Child</td>
+                    <td>Peak</td>
+                    <td>8 USD</td>
+                </tr>
+                <tr>
+                    <td>SL Adult</td>
+                    <td>Normal</td>
+                    <td>4 USD</td>
+                </tr>
+                <tr>
+                    <td>SL Adult</td>
+                    <td>Peak</td>
+                    <td>6 USD</td>
+                </tr>
+                <tr>
+                    <td>SL Child</td>
+                    <td>Normal</td>
+                    <td>2 USD</td>
+                </tr>
+                <tr>
+                    <td>SL Child</td>
+                    <td>Peak</td>
+                    <td>3 USD</td>
+                </tr>
+            </table>
+
+            <button class="continue" type="submit" id="formsubmit">Confirm</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="right">
+        <table id="guesttable">
+            <tr>
+                <td>Date</td>
+                <td id="summary-date">-</td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td id="summary-time">-</td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td id="summary-duration">-</td>
+            </tr>
+            <tr>
+                <th>Tickets</th>
+                <th>Charges</th>
+            </tr>
+            <tr>
+                <td>SL Adult</td>
+                <td id="SLadultCharge">$0</td>
+            </tr>
+            <tr>
+                <td id="SLchild">SL Child</td>
+                <td id="SLchildCharge">$0</td>
+            </tr>
+            <tr>
+                <td id="Fadult">Foreigner Adult</td>
+                <td id="FadultCharge">$0</td>
+            </tr>
+            <tr>
+                <td id="Fchild">Foreigner Child</td>
+                <td id="FchildCharge">$0</td>
+            </tr>
+            <tr>
+                <td id="Inf">Infant</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <th>Total Payable</th>
+                <th id="totalPayable">$0</th>
+            </tr>
+        </table>
+    </div>
+    </div>    
+
+
+    <footer>
+        <section class="prefoot">
+    
+    
+            <div class="pre">
+            
+            <h2 class="prehead">To help aid in the conservation of our precious turtles,<br> please click on the link below.</h2>
+            
+            <button class="prebtn"><a href="./Donations.html" target="_blank">Donate</a></button>
+            
+        </section>
+        <section class="footer">
+            <div class="social">
+                <p>Contact Us</p>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <ul class="footlist">
+                <li><a href="./homepage.html" target="_blank">Home</a></li>
+                <li><a href="./turtlecategories.html" target="_blank">Categories</a></li>
+                <li><a href="./HikaduwaTurtleHatch.html" target="_blank">Hikkaduwa</a></li>
+                <li><a href="./Threats.html" target="_blank">Threats</a></li>
+                <li><a href="./kosgoda.html" target="_blank">Kosgoda</a></li>
+                <li><a href="./bentota.html" target="_blank">Bentota</a></li>
+                <li><a href="./Donations.html" target="_blank">Donations</a></li>
+            </ul>
+            <P class="copyright">
+                Shell Saviors &copy 2023
+            </P>
+
+
+        </section>
+        </footer>
+    
+
+    <script src="./tickets.js"></script>    
+    
+</body>
+</html>

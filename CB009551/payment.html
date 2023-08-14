@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Payment</title>
+</head>
+<body>
+    
+    <div class="bg">
+
+    <div class="ticketsmain">
+        <div class="nav">
+            <nav><a href="./homepage.html" target="_blank">Home</a></nav>
+            <nav><a href="./turtlecategories.html" target="_blank">Turtle Categories</a></nav>
+            <nav><a href="./HikaduwaTurtleHatch.html" target="_blank">Hikkaduwa Turtle Hatchery</a></nav>
+            <nav><a href="./Threats.html" target="_blank">Threats</a></nav>
+            
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Other
+                </button>
+                <div class="dropdowncontent">
+                    <a href="./kosgoda.html" target="_blank">Kosgoda</a>
+                    <a href="./bentota.html" target="_blank">Bentota</a>
+                </div>
+            </div>
+            <nav><a href="./Donations.html" target="_blank">Donations</a></nav>
+        </div>
+        <h1 class="heading">Tickets</h1>
+    </div>
+
+    <div class="ticketingnav">
+        <div class="ticketnav">
+            <ul>
+                <li>Tickets ></li>
+                <li>Details ></li>
+                <li><a href="#blank">Payment ></a></li>
+                <li>confirmation</li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <div class="maincontainer">
+    <div class="paymentgrid">
+        
+        <div>
+        <form action="confirmation.html" class="conform">
+            
+            <h1 id="subhead">Enter Payment Details</h1>
+
+            <label for="ccnum"><h2>Credit card number:</h2></label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" onkeyup="validateCcnum()">
+            <span id="ccnum-error"></span>
+        
+            <label for="date"><h2>Expiry date:</h2></label>
+            <div class="exp-wrap">
+                <input autocomplete="off" class="exp" id="month" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="MM" type="text" onkeyup="validateExpirationDate()">
+                <input autocomplete="off" class="exp" id="year" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="YY" type="text" onkeyup="validateExpirationDate()" >
+            </div>
+            <span id="date-error"></span>
+
+            <label for="cvv"><h2>CVC/CVV:</h2></label>
+            <input type="text" id="cvv" name="cvv" onkeyup="validateCvv()">
+            <span id="cvv-error"></span>
+
+
+            <label for="cname"><h2>Name on Card:</h2></label>
+            <input type="text" id="cname" name="cname" onkeyup="validateCname()" >
+            <span id="cname-error"></span>
+
+            <button type="submit" id="formbutton" onclick="return ValidateForm1()">Confirm Purchase</button>
+            <span id="submit-error"></span>
+
+        </form>
+        </div>
+    </div>
+    
+    <div class="paymentright">
+        <table id="guesttable">
+            <tr>
+                <td>Date</td>
+                <td id="summary-date">-</td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td id="summary-time">-</td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td id="summary-duration">-</td>
+            </tr>
+            <tr>
+                <th>Tickets</th>
+                <th>Charges</th>
+            </tr>
+            <tr>
+                <td>SL Adult</td>
+                <td id="SLadultCharge">$0</td>
+            </tr>
+            <tr>
+                <td id="SLchild">SL Child</td>
+                <td id="SLchildCharge">$0</td>
+            </tr>
+            <tr>
+                <td id="Fadult">Foreigner Adult</td>
+                <td id="FadultCharge">$0</td>
+            </tr>
+            <tr>
+                <td id="Fchild">Foreigner Child</td>
+                <td id="FchildCharge">$0</td>
+            </tr>
+            <tr>
+                <td id="Inf">Infant</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <th>Total Payable</th>
+                <th id="totalPayable">$0</th>
+            </tr>
+        </table>
+    </div>
+    </div>
+    
+    <footer>
+        <section class="prefoot">
+    
+    
+            <div class="pre">
+            
+            <h2 class="prehead">To help aid in the conservation of our precious turtles,<br> please click on the link below.</h2>
+            
+            <button class="prebtn"><a href="./Donations.html" target="_blank">Donate</a></button>
+            
+        </section>
+        <section class="footer">
+            <div class="social">
+                <p>Contact Us</p>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <ul class="footlist">
+                <li><a href="./homepage.html" target="_blank">Home</a></li>
+                <li><a href="./turtlecategories.html" target="_blank">Categories</a></li>
+                <li><a href="./HikaduwaTurtleHatch.html" target="_blank">Hikkaduwa</a></li>
+                <li><a href="./Threats.html" target="_blank">Threats</a></li>
+                <li><a href="./kosgoda.html" target="_blank">Kosgoda</a></li>
+                <li><a href="./bentota.html" target="_blank">Bentota</a></li>
+                <li><a href="./Donations.html" target="_blank">Donations</a></li>
+            </ul>
+            <P class="copyright">
+                Shell Saviors &copy 2023
+            </P>
+
+
+        </section>
+        </footer>
+
+    </div>
+
+<script src="./payment.js"></script>
+</body>
+</html>
